@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <title>ONG Mão Amiga - Inscrição de curso</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css">
+  </head>
+  <body>
+    <!--
+      Readicionar picture quando tivermos uma imagem que corresponda a logo da ONG Mão Amiga
+  	-->
+    <!-- <picture>
+	    <source srcset="images/maos-1428x1024.png" media="(max-width: 1428px)">
+	    <source srcset="images/maos-2972x2133.png" media="(max-width: 2972px)">
+	    <img srcset="images/maos-5944x4267.png" alt="Aperto de mãos pintadas com cores do planeta Terra">
+		</picture> -->
+    <h1>Inscreva-se para cursos gratuitos</h1>
+    <main>
+      <section id="principal-info">
+        <div></div>
+        <button type="button">Insira uma foto</button>
+        <form action="../ong-mao-amiga-servico-curso/processamento/processaInscrevase.php" method="post">
+	        <label for="description">Descri��o pessoal</label>
+	        <textarea id="description" name="description"  class="input" maxlength="50" placeholder="Quem � voc�? Como voc� �? Quais s�o as coisas que voc� faz?"></textarea>
+	 	</section>
+	  	   <section id="others-info">
+	        <label for="age">Idade</label>
+	        <input id="age" name="age" class="input" type="number" placeholder="Qual a sua idade?">
+	
+	        <label for="breed">Raça</label>
+	        <input id="breed" name="breed" class="input" type="text" placeholder="Qual a sua raça?">
+	
+	        <label for="gender">Gênero</label>
+	        <input id="gender" name="gender" class="input" type="text" placeholder="Qual o seu gênero?">
+	
+	        <label for="neighborhood">Bairro</label>
+	        <input id="neighborhood" name="neighborhood" class="input" type="text" placeholder="Em que bairro você mora?">
+	
+	        <label for="knowledge">Nível de conhecimento</label>
+	        <textarea id="knowledge" name="knowledge" class="input" maxlength="50" placeholder="Qual o seu nível de conhecimento em desenvolvimento de software e inglês?"></textarea>
+	
+	        <label for="contribution">Contribuição a comunidade</label>
+	        <textarea id="contribution" name="contribution" class="input" maxlength="50" placeholder="Como você acha que pode contribuir para a sua comunidade após concluir o curso?"></textarea>
+	
+	        <label for="help">Como a ONG pode ajudar</label>
+	        <textarea id="help" name="help" class="input" maxlength="50" placeholder="Como nós podemos te ajudar a alcançar seus objetivos?"></textarea>
+	
+	        <label for="course">Curso</label>
+	        <select id="course" name="couser" class="input">
+	          <option value="none">Que curso você deseja fazer?</option>
+	          <option value="development">Desenvolvimento de software</option>
+	          <option value="english">Inglês</option>
+	        </select>
+	      </section>
+	      <input type="submit" value="Inscrever-me">
+      </form>
+    </main>
+
+  <script src="scripts/elements.js"></script>
+  <script src="scripts/main.js"></script>
+  </body>
+</html>
